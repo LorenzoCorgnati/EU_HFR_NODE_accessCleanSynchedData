@@ -21,7 +21,7 @@ The required packages are:
 - dateutil.relativedelta.relativedelta
 
 Cite as:
-Lorenzo Corgnati. (2024). EU_HFR_NODE_accessCleanSynchedData. DOI: to be assigned
+Lorenzo Corgnati. (2024). EU_HFR_NODE_accessCleanSynchedData. DOI: 10.5281/zenodo.11475569
 
 
 Author: Lorenzo Corgnati
