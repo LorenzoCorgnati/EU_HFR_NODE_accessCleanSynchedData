@@ -97,7 +97,7 @@ def main(argv):
         # List the files to be removed
         filesToBeRemoved = [file for file in glob.glob(os.path.join(srcFolderPattern,'**/*'), recursive = True) if os.path.getmtime(file) < mTime]   
         # Manage source folder paths: keep only folder paths containing 'Radials' and 'Totals' strings
-        filesToBeRemoved = [item for item in filesToBeRemoved if not os. path. isdir(item)]
+        filesToBeRemoved = [item for item in filesToBeRemoved if not os.path.isdir(item)]
 
         # Remove files
         for file in filesToBeRemoved:
