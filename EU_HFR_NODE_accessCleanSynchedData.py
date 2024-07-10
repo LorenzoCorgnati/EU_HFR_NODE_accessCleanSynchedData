@@ -36,15 +36,15 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"m:h",["memory=","help"])
     except getopt.GetoptError:
-        print('Usage: EU_HFR_NODE_accessCleanSynchedData.py -m <number of days in the past beyond which files are removed (default to 30)>')
+        print('Usage: EU_HFR_NODE_accessCleanSynchedData.py -m <number of days in the past beyond which files are removed (default to 15)>')
         sys.exit(2)
         
     if not argv:
-        memory = 30       # number of days in the past beyond which files are removed (default to 30)
+        memory = 15       # number of days in the past beyond which files are removed (default to 15)
         
     for opt, arg in opts:
         if opt in ("-h", "--help"):
-            print('Usage: EU_HFR_NODE_accessCleanSynchedData.py -m <number of days in the past beyond which files are removed (default to 30)>')
+            print('Usage: EU_HFR_NODE_accessCleanSynchedData.py -m <number of days in the past beyond which files are removed (default to 15)>')
             sys.exit()
         elif opt in ("-m", "--memory"):
             memory = int(arg)
