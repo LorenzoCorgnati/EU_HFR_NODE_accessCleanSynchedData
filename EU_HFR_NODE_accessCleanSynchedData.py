@@ -101,8 +101,12 @@ def main(argv):
 
         # Remove files
         for file in filesToBeRemoved:
-            os.remove(file)
-            logger.info('File ' + file + ' removed.')
+            try:
+                os.remove(file)
+                logger.info('File ' + file + ' removed.')
+            except Exception as err:
+                cPDerr = True
+                logger.error(err.args[0]) 
 
     except Exception as err:
         cPDerr = True
